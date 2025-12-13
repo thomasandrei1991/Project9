@@ -33,4 +33,7 @@
     else if(isset($_POST['about'])){
         header("location: about.php");
     }
+    else if(isset($_POST['services'])){
+        header("location: services.php");
+    }
 ?>

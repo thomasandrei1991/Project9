@@ -1,0 +1,97 @@
+/* -------------------- Home Design -------------------- */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    background-color: aquamarine;
+}
+h1{
+    height: 50px;
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.home-container {
+    text-align: center; /* centers inline images */
+}
+
+.home-container img{
+    display: block;
+    margin: 50px auto; /* horizontal center, top spacing */
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    border: 5px solid blue;
+    box-shadow: gray 5px 5px 5px;
+}
+.home-container h1{
+    color: blue;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.home-container p{
+    font-size: 18px;
+    margin: 20px auto;
+    width: 60%;
+    line-height: 1.6;
+}
+.home-container ul{
+    text-align: left;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    list-style: none;
+    
+}
+
+/* UL gap helpers (use one of these on your <ul> to add spacing between <li> items) */
+ul.flex-gap {
+    display: flex;
+    gap: 16px; /* horizontal spacing between items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.vertical-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* vertical spacing between items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.grid-gap {
+    display: grid;
+    gap: 12px 24px; /* row-gap column-gap */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* Fallback for older browsers that don't support gap on flex */
+ul.fallback li { margin-bottom: 12px; }
+ul.fallback li:last-child { margin-bottom: 0; }
+
+footer {
+    height: 60px;
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+    line-height: 60px; /* vertically center text */
+    margin-top: 50px;
+}
+footer form button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
