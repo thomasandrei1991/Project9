@@ -16,7 +16,7 @@
                 <button name="about">
                     About
                 </button>
-                <button name="Contact">
+                <button name="contact">
                     Contact
                 </button>
                 <button name="services">
@@ -35,5 +35,8 @@
     }
     else if(isset($_POST['services'])){
         header("location: services.php");
+    }
+    else if(isset($_POST['contact'])){
+        header("location: contact.php");
     }
 ?>
