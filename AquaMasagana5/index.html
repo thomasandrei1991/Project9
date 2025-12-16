@@ -1,0 +1,37 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <h1>Hello Mars</h1>
+        <h1>Hello Jupiter</h1>
+        <p id="comment1">Watch Me</p>
+        <p id="comment2">Watch You</p>
+        <p id="comment3">Watch Them</p>
+        <button onclick="clickMe()" onmouseover="hoverMe()" onmouseout="unhoverMe()">Click Me</button>
+    </body>
+    <script>
+        bgcolor = document.body.style.backgroundColor = "lightgrey";
+        myHeadings = document.querySelectorAll("h1");
+        myComment1 = document.querySelector("#comment1");
+        myComment2 = document.querySelector("#comment2");
+        myComment3 = document.querySelector("#comment3");
+        myComment1.innerHTML = "Hello from Comment 1";
+        myComment1.style.color = "blue";
+        console.log(myHeadings);
+        console.log(myComment1);
+
+        function clickMe(){
+            alert("Button Clicked!");
+        }
+        function hoverMe(){
+            hover = document.body.style.button.backgroundColor = ("yellow");
+        }
+        function unhoverMe(){
+            unhover = document.body.style.button.backgroundColor = ("lightgrey");
+        }
+    </script>
+</html>
